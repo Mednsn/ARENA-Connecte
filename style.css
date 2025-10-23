@@ -19,6 +19,8 @@ header{
     height: 100vh;
     background-image: url(image/imageAccuiel.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 nav{
@@ -28,6 +30,7 @@ nav{
     justify-content: space-between;
     align-items: center;
    background: var(--background);
+   
     padding: 10px 50px;
 }
 
@@ -36,6 +39,9 @@ nav .logo img{
     width: 20%;
 }
 
+nav .home{
+    display: none;
+}
 nav ul{
     display: flex;
     gap: 20px;
@@ -68,13 +74,14 @@ nav .button a:hover{
 }
 
 .hed{
+    width: 50%;
    display: flex;
    flex-direction: column;
-   text-align: center;
+   margin-left: 2rem;
 }
 
 .hed .title h1{
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: bold;
     font-family:fantasy;  
       color: #fff;
@@ -82,10 +89,19 @@ nav .button a:hover{
     text-shadow: 0px 10px 10px #0BA4A4;
 }
 
+.hed .title p{
+    width: 80%;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 0.5rem 0;
+}
+
 .section-button{
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 30px;
+    
 }
 
 .section-button a{
@@ -189,16 +205,24 @@ nav .button a:hover{
 
 .section-image{
     width: 40%;
+    background-image: url(image/pexels-karola-g-5904064.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.section-image img{
-       width: 300px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
+.section-image h3{
+  height: 100vh;
+  width: 100%;
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ color: #fff;
+ font-size: 1.5rem;
+ font-weight: 900;
+ padding: 0 1rem;
+ text-align: center;
 
+}
 
 
 /* footer*/
@@ -231,7 +255,7 @@ footer{
 }
 
 .footer-title .icont i{
-    width: 10%;
+    width: 30px;
     background-color: #bffefe;
     color: #0BA4A4;
     border: 1px solid #034B3F;
@@ -253,6 +277,86 @@ footer{
     color: #0BA4A4;
 }
 
+@media screen and (max-width:1000px) {
+    nav .button a{
+        display: none;
+    }
+
+    nav .home{
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+}
+
+
+@media screen and (max-width:800px) {
+    header{
+        height: 120vh;
+    }
+    nav .logo img{
+        display: none;
+    }
+    
+    .hed .title h1{
+        padding-top: 7rem;
+        font-size: 3rem;
+    }
+
+    .section-button{
+        gap :15px;
+    }
+    .section-button a{
+        padding: 20px 10px;
+    }
+
+    .footer-item{
+        flex-wrap: wrap;
+    }
+    .footer-title{
+        width: 50%;
+    }
+
+    .section-image {
+        width: 50%;
+    }
+    .input .section_input input{
+        width: 250px;
+    }
+
+    .input .section_input .link-passowrd{
+        width: 70%;
+    }
+
+    .section-conction .section-button a,
+    .section-inscription .section-button a{
+        width: 250px;
+    }
+
+    }
 
 
 
+@media screen and (max-width:500px){
+ header{
+        width: 150vh;
+    }
+
+    .conxion, .inscription{
+        height: 120vh;
+    }
+
+    .hed .title h1{
+        padding-top: 12rem;
+    }
+
+    .section-image,
+    .section-image h3{
+        display: none;
+    }
+    
+}
