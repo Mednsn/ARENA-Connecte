@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+:root{
+    --background:linear-gradient(to right,#0D022D,#034B3F);
+
+}
+
+/*Accueil*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/imageAccuiel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background: var(--background);
+   
+    padding: 10px 50px;
+}
+
+
+nav .logo img{
+    width: 20%;
+}
+
+nav .home{
+    display: none;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #0BA4A4;
+}
+
+nav .button a{
+    background-color:#0BA4A4;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius:10px ;
+    transition: 0.3s ease;
+}
+
+nav .button a:hover{
+    background-color: #025a5a;
+}
+
+.hed{
+    width: 50%;
+   display: flex;
+   flex-direction: column;
+   margin-left: 2rem;
+}
+
+.hed .title h1{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family:fantasy;  
+      color: #fff;
+    padding-top: 15rem;
+    text-shadow: 0px 10px 10px #0BA4A4;
+}
+
+.hed .title p{
+    width: 80%;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.section-button{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.section-button a{
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #0BA4A4;
+    padding: 10px 20px;
+    margin-top: 1rem;
+  
+    transition: ease;
+}
+
+.section-button .color{
+    background-color: #fff;
+    color: #0BA4A4;
+}
+
+.section-button a:hover{
+     background-color: #025a5a;
+}
+
+.section-button .color:hover{
+    background-color: #b3b1b1;
+}
+
+
+
+/*conction----------------inscription--------------*/
+
+.conxion,.inscription{
+    width: 100%;
+    height: 100vh;
+    background: var(--background);
+    display: flex;
+    gap: 1rem;
+}
+
+.section_title{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 4rem 0 1rem 0;
+    transition: 0.3s ease;
+}
+
+.section_title:hover{
+    color: #0BA4A4;
+}
+
+.section-conction,.section-inscription{
+    margin: auto;
+    padding: 1rem 2rem;
+}
+
+
+
+.input .section_input p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0BA4A4;
+    padding: 0.5rem 0;
+}
+
+.input .section_input input{
+    padding: 1rem;
+    width: 350px;
+    border: 1px solid #0BA4A4;
+    border-radius: 10px;
+}
+
+.input .section_input .link-passowrd{
+    text-align: right;
+    padding: 0.5rem 0;
+}
+
+.input .section_input .link-passowrd a{
+    color: #0BA4A4;
+    font-size: 16px;
+    font-weight: 800;
+    transition: 0.3 ease;
+}
+
+.input .section_input .link-passowrd a:hover{
+    color:#025a5a;
+}
+
+.section-conction .section-button,.section-inscription .section-button{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-conction .section-button a,.section-inscription .section-button a{
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.section-image{
+    width: 40%;
+    background-image: url(image/pexels-karola-g-5904064.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-image h3{
+  height: 100vh;
+  width: 100%;
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ color: #fff;
+ font-size: 1.5rem;
+ font-weight: 900;
+ padding: 0 1rem;
+ text-align: center;
+
+}
+
+
+/* footer*/
+
+footer{
+    width: 100%;
+
+}
+
+.footer-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D022D;
+    padding: 1rem 2rem;
+}
+
+.footer-title{
+    width: 30%;
+}
+.footer-title img{
+    width: 100px;
+}
+
+.footer-title p{
+    width: 60%;
+    color: #4c4c4c;
+    line-height: 20px;
+   
+}
+
+.footer-title .icont i{
+    width: 30px;
+    background-color: #bffefe;
+    color: #0BA4A4;
+    border: 1px solid #034B3F;
+    border-radius:20px;
+    padding: 8px 0;
+    margin: 10px 5px;
+
+}
+
+.footer-link h3{
+    color: #fff;
+}
+.footer-link ul li a{
+    color: #4c4c4c;
+    line-height: 30px;
+}
+
+.footer-link ul li a i{
+    color: #0BA4A4;
+}
+
+@media screen and (max-width:1000px) {
+    nav .button a{
+        display: none;
+    }
+
+    nav .home{
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+}
+
+
+@media screen and (max-width:800px) {
+    header{
+        height: 120vh;
+    }
+    nav .logo img{
+        display: none;
+    }
+    
+    .hed .title h1{
+        padding-top: 7rem;
+        font-size: 3rem;
+    }
+
+    .section-button{
+        gap :15px;
+    }
+    .section-button a{
+        padding: 20px 10px;
+    }
+
+    .footer-item{
+        flex-wrap: wrap;
+    }
+    .footer-title{
+        width: 50%;
+    }
+
+    .section-image {
+        width: 50%;
+    }
+    .input .section_input input{
+        width: 250px;
+    }
+
+    .input .section_input .link-passowrd{
+        width: 70%;
+    }
+
+    .section-conction .section-button a,
+    .section-inscription .section-button a{
+        width: 250px;
+    }
+
+    }
+
+
+
+@media screen and (max-width:500px){
+ header{
+        width: 150vh;
+    }
+
+    .conxion, .inscription{
+        height: 120vh;
+    }
+
+    .hed .title h1{
+        padding-top: 12rem;
+    }
+
+    .section-image,
+    .section-image h3{
+        display: none;
+    }
+    
+}
+/********************profile****************/
+body{
+    background: #0D022D;
+}
+.div-vide{
+    background: #D9D9D9;
+    height: 200px;
+    display: grid;
+    border:1px solid#09f9f9;
+    border-radius: 16px;
+  
+    align-items: end;
+
+}
+.class-image{
+    height: 110px;
+    width: 160px;
+    background-image:url(image/img-profile.jpg) ;
+    background-size: cover;
+   
+    padding: 10px;
+    border-radius: 16px;
+    margin-left: 190px;
+}
+.user-namee{
+   
+    
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.namee{
+    display: grid;
+    justify-content: center;
+    font-size: 65px;
+    font-style:bold;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.div-ahref{
+    display: grid;
+    justify-content: center;
+
+}
+.div-ahref-a{
+ 
+  padding: 15px 50px;
+   text-decoration: none;
+
+   background: #52d1d1;
+   color: white;
+   border-radius: 8px;
+}
+.diamond{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+}
+.diamonde{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+}
+.image-game{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.favorite-game{
+    background: #4c4c4c;
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 16px;
+    
+
+}
+.contry-plus{
+    display: grid;
+    justify-content: center;
+}
+.contry{
+    display: grid;
+    justify-content: center;
+}
+
+.div-contry{
+    
+    background: #4c4c4c;
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 16px;
+    display: grid;
+    grid-template-rows: 40px 50px 50px;
+
+    
+}
+.img-diamnd{
+      display: grid;
+    justify-content: center;
+}
+.div-dimnd{
+   
+    background-image: url(image/diamond.png);
+    height: 200px;
+    background-size: cover;
+    width: 500px;
+    padding: 30px;
+    border-radius: 16px;
+    
+}
+.div-ranking{
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
