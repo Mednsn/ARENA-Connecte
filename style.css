@@ -85,7 +85,10 @@ nav .button a:hover{
    flex-direction: column;
    margin-left: 2rem;
 }
-
+.majorr{
+    border-radius: 12px;
+        text-align: center;
+}
 .hed .title h1{
     font-size: 4rem;
     font-weight: bold;
