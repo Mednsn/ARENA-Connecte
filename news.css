@@ -65,143 +65,8 @@ nav .button a:hover {
   background-color: #025a5a;
 }
 
-.hed {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
 
-.hed .title h1 {
-  font-size: 6rem;
-  font-weight: bold;
-  font-family: fantasy;
-  color: #fff;
-  padding-top: 15rem;
-  text-shadow: 0px 10px 10px #0ba4a4;
-}
 
-.section-button {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.section-button a {
-  width: 150px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  background: #0ba4a4;
-  padding: 10px 20px;
-  margin-top: 1rem;
-
-  transition: ease;
-}
-
-.section-button .color {
-  background-color: #fff;
-  color: #0ba4a4;
-}
-
-.section-button a:hover {
-  background-color: #025a5a;
-}
-
-.section-button .color:hover {
-  background-color: #b3b1b1;
-}
-
-/*conction----------------inscription--------------*/
-
-.conxion,
-.inscription {
-  width: 100%;
-  height: 100vh;
-  background: var(--background);
-  display: flex;
-  gap: 1rem;
-}
-
-.section_title {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 4rem 0 1rem 0;
-  transition: 0.3s ease;
-}
-
-.section_title:hover {
-  color: #0ba4a4;
-}
-
-.section-conction,
-.section-inscription {
-  margin: auto;
-  padding: 1rem 2rem;
-}
-
-.input .section_input p {
-  font-size: 14px;
-  font-weight: 600;
-  color: #0ba4a4;
-  padding: 0.5rem 0;
-}
-
-/*////:::::::::profile:::::::::*/
-.background-image {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  border: 2px solid rgb(0, 255, 251);
-
-  height: 100vh;
-  background-image: url(images/backgroundm.jpeg);
-  background-size: cover;
-}
-.profile-image {
-  border: 2px solid red;
-}
-.profile-image img {
-  width: 60%;
-  height: 50%;
-  border-radius: 50%;
-  border: 2px solid rgb(0, 255, 251);
-}
-.info-profile {
-  border: 2px solid rgb(0, 255, 251);
-  background: #0ba4a4;
-  display: grid;
-  grid-template-rows: 150px auto;
-}
-.username {
-  background: #034b3f;
-  border: 2px solid red;
-  display: grid;
-  align-items: center;
-  justify-content: start;
-  color: #fff;
-}
-.infos-joueur {
-  background: #716b81;
-  border: 2px solid red;
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-.div-label {
-  display: grid;
-  align-items: center;
-}
-.div-valeur {
-  display: grid;
-  align-items: center;
-}
-.div-100 {
-  width: 300px;
-  height: 4vh;
-  border-radius: 8px;
-  background: red;
-}
 
 /* footer*/
 
@@ -356,7 +221,7 @@ i {
 }
 .news-card {
   display: grid;
-  grid-template-rows:1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 .news-card:hover {
   border: 3px solid white;
