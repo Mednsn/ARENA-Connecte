@@ -14,74 +14,72 @@
 /*Accueil*/
 /*abdellah : remove hight because he make a truble in  my work*/
 
-header{
-    width: 100%;
-    height: 16vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+header {
+  width: 100%;
+  height: 16vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.fa-regular, .fa-solid{
-    background-color: #0BA4A4;
+.fa-regular,
+.fa-solid {
+  background-color: #0ba4a4;
 }
-nav{
-    width: 100%;
-    position: fixed;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
+nav {
+  width: 100%;
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 
-    align-items: center;
-   background: var(--background);
-   
-    padding: 25px 50px 10px 50px;
-}
+  align-items: center;
+  background: var(--background);
 
-
-nav .logo img{
-    width: 20%;
+  padding: 25px 50px 10px 50px;
 }
 
-nav .home{
-    display: none;
-}
-nav ul{
-    display: flex;
-    gap: 20px;
+nav .logo img {
+  width: 20%;
 }
 
-nav ul li a{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    background-color: transparent;
-    transition: 0.3s ease;
+nav .home {
+  display: none;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li a:hover{
-    color: #0BA4A4;
+nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: transparent;
+  transition: 0.3s ease;
 }
 
-nav .button{
-    text-align: right;
+nav ul li a:hover {
+  color: #0ba4a4;
 }
 
-nav .button a{
-    background-color:#0BA4A4;
-    padding: 8px 12px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius:10px ;
-    transition: 0.3s ease;
+nav .button {
+  text-align: right;
 }
 
-nav .button a:hover{
-    background-color: #025a5a;
+nav .button a {
+  background-color: #0ba4a4;
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.3s ease;
 }
 
-
+nav .button a:hover {
+  background-color: #025a5a;
+}
 
 /* footer*/
 
@@ -133,8 +131,6 @@ footer {
 }
 
 /*header edite by abdellah*/
-
-
 
 .news-nav {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -196,6 +192,7 @@ i {
 .news-section {
   display: grid;
   margin-inline: 20px;
+  margin-top: 20px;
 }
 
 .news-line {
@@ -248,17 +245,35 @@ i {
 }
 
 .news-card .news-image {
-  background-image: url("images/news.jpg");
   background-size: cover;
   height: 30vh;
   border-top-left-radius: 11px;
-  border-bottom-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+.news-image1 {
+  background-image: url(images/news3.avif);
+}
+.news-image2 {
+  background-image: url(images/news4.avif);
+}
+.news-image3 {
+  background-image: url(images/news5.avif);
+}
+.news-image4 {
+  background-image: url(images/news6.avif);
+}
+.news-image5 {
+  background-image: url(images/news7.avif);
+}
+.news-image6 {
+  background-image: url(images/news8.avif);
 }
 
 .news-card .new-description {
   display: grid;
   background-color: #363434;
-  border-top-right-radius: 11px;
+  border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
   color: white;
   padding: 10px;
@@ -401,81 +416,186 @@ footer {
   color: #0ba4a4;
 }
 
-@media screen and (max-width: 1000px) {
-  nav .button a {
-    display: none;
+@media screen and (max-width: 992px) {
+  nav {
+    grid-template-columns: auto auto auto;
+    padding: 10px 20px;
   }
 
   nav .home {
     display: block;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 500;
-    text-align: center;
-    padding-bottom: 1rem;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: right;
   }
-}
 
-@media screen and (max-width: 800px) {
-  header {
-    height: 120vh;
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    gap: 15px;
   }
-  nav .logo img {
+
+  nav:hover ul {
+    display: flex;
+  }
+
+  nav .button {
     display: none;
   }
 
-  .hed .title h1 {
-    padding-top: 7rem;
-    font-size: 3rem;
+  .news-line {
+    grid-template-columns: 1fr 1fr;
   }
 
-  .section-button {
-    gap: 15px;
-  }
-  .section-button a {
-    padding: 20px 10px;
+  .main-new {
+    grid-template-columns: 1fr;
+    height: auto;
   }
 
   .footer-item {
     flex-wrap: wrap;
-  }
-  .footer-title {
-    width: 50%;
-  }
-
-  .section-image {
-    width: 50%;
-  }
-  .input .section_input input {
-    width: 250px;
-  }
-
-  .input .section_input .link-passowrd {
-    width: 70%;
-  }
-
-  .section-conction .section-button a,
-  .section-inscription .section-button a {
-    width: 250px;
+    gap: 2rem;
   }
 }
-/*testtest*/
-@media screen and (max-width: 500px) {
-  header {
-    width: 150vh;
+
+@media screen and (max-width: 600px) {
+  nav {
+    grid-template-columns: 1fr auto;
   }
 
-  .conxion,
-  .inscription {
-    height: 120vh;
+  nav .logo img {
+    width: 40%;
   }
 
-  .hed .title h1 {
-    padding-top: 12rem;
+  nav ul {
+    top: 65px;
   }
 
-  .section-image,
-  .section-image h3 {
+  .news-line {
+    grid-template-columns: 1fr;
+  }
+
+  .news-nav {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .footer-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .home {
+    display: block;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .navbar ul {
     display: none;
+    flex-direction: column;
+    background-color: var(--background, #111);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    gap: 15px;
+    z-index: 1000;
+  }
+
+  .navbar:hover ul {
+    display: flex;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .news-nav {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .news-dtails {
+    padding: 10px;
+  }
+
+  .detail-img1 img,
+  .detail-img2 img,
+  .detail-img3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-item {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 8px 15px;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  .home {
+    font-size: 24px;
+  }
+
+  .navbar ul {
+    top: 60px;
+  }
+
+  .news-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .news-nav-element2 {
+    order: -1;
+  }
+
+  .footer-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .footer-link h3 {
+    font-size: 1rem;
   }
 }
