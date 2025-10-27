@@ -211,7 +211,7 @@ i {
 }
 
 .main-new .news-image {
-  background-image: url(images/news.jpg);
+  background-image: url(image/news.jpg);
   background-size: cover;
   border-top-left-radius: 11px;
   border-bottom-left-radius: 11px;
