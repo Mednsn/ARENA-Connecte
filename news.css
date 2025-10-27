@@ -356,18 +356,24 @@ i {
 }
 .news-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 1fr;
 }
-.news-card:hover{
-    border: 3px solid white;
-    border-radius: 10px;
-    box-shadow: 0 0 15px yellow;
+.news-card:hover {
+  border: 3px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px yellow;
+}
+
+.main-new:hover {
+  border: 3px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px yellow;
 }
 
 .news-card .news-image {
   background-image: url("images/news.jpg");
   background-size: cover;
-  height: 20vh;
+  height: 30vh;
   border-top-left-radius: 11px;
   border-bottom-left-radius: 11px;
 }
