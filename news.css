@@ -134,8 +134,7 @@ footer {
 
 /*header edite by abdellah*/
 
-.news-header {
-}
+
 
 .news-nav {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -199,8 +198,6 @@ i {
   margin-inline: 20px;
 }
 
-.news-lines {
-}
 .news-line {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
