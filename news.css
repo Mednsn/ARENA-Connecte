@@ -204,6 +204,7 @@ i {
 }
 
 .main-new {
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
@@ -253,22 +254,22 @@ i {
 }
 
 .news-image1 {
-  background-image: url(images/news3.avif);
+  background-image: url(image/news3.avif);
 }
 .news-image2 {
-  background-image: url(images/news4.avif);
+  background-image: url(image/news4.avif);
 }
 .news-image3 {
-  background-image: url(images/news5.avif);
+  background-image: url(image/news5.avif);
 }
 .news-image4 {
-  background-image: url(images/news6.avif);
+  background-image: url(image/news6.avif);
 }
 .news-image5 {
-  background-image: url(images/news7.avif);
+  background-image: url(image/news7.avif);
 }
 .news-image6 {
-  background-image: url(images/news8.avif);
+  background-image: url(image/news8.avif);
 }
 
 .news-card .new-description {
