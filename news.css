@@ -14,194 +14,74 @@
 /*Accueil*/
 /*abdellah : remove hight because he make a truble in  my work*/
 
-header {
-  width: 100%;
-  background-image: url(images/imageAccuiel.jpg);
-  background-size: cover;
+header{
+    width: 100%;
+    height: 16vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-nav {
-  width: 100%;
-  position: sticky;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--background);
-  padding: 10px 50px;
+.fa-regular, .fa-solid{
+    background-color: #0BA4A4;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+
+    align-items: center;
+   background: var(--background);
+   
+    padding: 25px 50px 10px 50px;
 }
 
-nav .logo img {
-  width: 20%;
+
+nav .logo img{
+    width: 20%;
 }
 
-nav ul {
-  display: flex;
-  gap: 20px;
+nav .home{
+    display: none;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li a {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-  background-color: transparent;
-  transition: 0.3s ease;
+nav ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #0ba4a4;
+nav ul li a:hover{
+    color: #0BA4A4;
 }
 
-nav .button a {
-  background-color: #0ba4a4;
-  padding: 8px 12px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 10px;
-  transition: 0.3s ease;
+nav .button{
+    text-align: right;
 }
 
-nav .button a:hover {
-  background-color: #025a5a;
+nav .button a{
+    background-color:#0BA4A4;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius:10px ;
+    transition: 0.3s ease;
 }
 
-.hed {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+nav .button a:hover{
+    background-color: #025a5a;
 }
 
-.hed .title h1 {
-  font-size: 6rem;
-  font-weight: bold;
-  font-family: fantasy;
-  color: #fff;
-  padding-top: 15rem;
-  text-shadow: 0px 10px 10px #0ba4a4;
-}
 
-.section-button {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.section-button a {
-  width: 150px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  background: #0ba4a4;
-  padding: 10px 20px;
-  margin-top: 1rem;
-
-  transition: ease;
-}
-
-.section-button .color {
-  background-color: #fff;
-  color: #0ba4a4;
-}
-
-.section-button a:hover {
-  background-color: #025a5a;
-}
-
-.section-button .color:hover {
-  background-color: #b3b1b1;
-}
-
-/*conction----------------inscription--------------*/
-
-.conxion,
-.inscription {
-  width: 100%;
-  height: 100vh;
-  background: var(--background);
-  display: flex;
-  gap: 1rem;
-}
-
-.section_title {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 4rem 0 1rem 0;
-  transition: 0.3s ease;
-}
-
-.section_title:hover {
-  color: #0ba4a4;
-}
-
-.section-conction,
-.section-inscription {
-  margin: auto;
-  padding: 1rem 2rem;
-}
-
-.input .section_input p {
-  font-size: 14px;
-  font-weight: 600;
-  color: #0ba4a4;
-  padding: 0.5rem 0;
-}
-
-/*////:::::::::profile:::::::::*/
-.background-image {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  border: 2px solid rgb(0, 255, 251);
-
-  height: 100vh;
-  background-image: url(images/backgroundm.jpeg);
-  background-size: cover;
-}
-.profile-image {
-  border: 2px solid red;
-}
-.profile-image img {
-  width: 60%;
-  height: 50%;
-  border-radius: 50%;
-  border: 2px solid rgb(0, 255, 251);
-}
-.info-profile {
-  border: 2px solid rgb(0, 255, 251);
-  background: #0ba4a4;
-  display: grid;
-  grid-template-rows: 150px auto;
-}
-.username {
-  background: #034b3f;
-  border: 2px solid red;
-  display: grid;
-  align-items: center;
-  justify-content: start;
-  color: #fff;
-}
-.infos-joueur {
-  background: #716b81;
-  border: 2px solid red;
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-.div-label {
-  display: grid;
-  align-items: center;
-}
-.div-valeur {
-  display: grid;
-  align-items: center;
-}
-.div-100 {
-  width: 300px;
-  height: 4vh;
-  border-radius: 8px;
-  background: red;
-}
 
 /* footer*/
 
@@ -254,8 +134,7 @@ footer {
 
 /*header edite by abdellah*/
 
-.news-header {
-}
+
 
 .news-nav {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -319,8 +198,6 @@ i {
   margin-inline: 20px;
 }
 
-.news-lines {
-}
 .news-line {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -356,7 +233,7 @@ i {
 }
 .news-card {
   display: grid;
-  grid-template-rows:1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 .news-card:hover {
   border: 3px solid white;
@@ -582,7 +459,7 @@ footer {
     width: 250px;
   }
 }
-
+/*testtest*/
 @media screen and (max-width: 500px) {
   header {
     width: 150vh;
