@@ -348,6 +348,8 @@ i {
   font-size: 17px;
   color: #7a7777;
 }
+
+
 .detail-two {
   display: grid;
   grid-template-columns: auto auto auto;
