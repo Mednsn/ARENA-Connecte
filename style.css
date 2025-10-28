@@ -615,20 +615,30 @@ margin-top: 20px;
 
 
 }
+.label-et-input{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items:center;
+    justify-content: center;
+    background: #1b0b43dd;
+    border-radius: 12px;
+}
 .label-et-input label{
   
     
-   color: #ff1010;
+   color: #ed3939;
 }
 .label-et-input input{
     height: 3rem;
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
-    background: #beb2b2;
+    background: #a49b9b;
+
 }
 .entrer-inputs-parametre{
     display: grid;
     grid-template-rows: repeat(4,70px);
+    align-self: center;
 
     
    
@@ -656,21 +666,33 @@ margin-top: 20px;
     
 }
 .div-buttonn{
-    display: grid;
+    margin-top: 17px;
+    display: grid;   
+    grid-template-columns: auto auto;
+    gap: 5px;
+    align-items:center;
+    justify-content: center;
+   
     
-    grid-template-columns: 35% 20%;
+    
     
     
     
 }
 .div-buttonn button{
+     box-shadow:0 0 30px #9cf8ff;
     border-radius: 10px;
     height: 30px;
     width: 90px;
-    background: green;
+    background: rgb(78, 128, 201);
     
 }
-@media screen and (max-width:950px){
+@media screen and (max-width:660px){
+     .div-all-modifer{
+       display: flex;
+       flex-direction:column;        
+    }
+
     .your-img{
     border: 4px solid red;
     border-radius: 50%;
@@ -680,6 +702,7 @@ margin-top: 20px;
     background-image: url(image/img-profile.jpg);
     background-size: cover;
 }
+
 .icon-img-profile{
     height: 30px;
     width: 30px;
@@ -694,7 +717,34 @@ margin-top: 20px;
     
 }
 }
-/***************/
+@media screen and (max-width:660px){
+    .your-img{
+    border: 4px solid red;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 30px red;
+    background-image: url(image/img-profile.jpg);
+    background-size: cover;
+}
+
+.icon-img-profile{
+    height: 20px;
+    width: 20px;
+    background: #898990;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 70px;
+    margin-left: 70px;
+    
+}
+
+    
+}
+/*****************************/
 
 :root{
     --background:linear-gradient(to right,#0D022D,#034B3F);
