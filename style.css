@@ -12,7 +12,7 @@
 
 }
 
-/*Accueil*/
+/****************accuiel******************/
 
 header{
     width: 100%;
@@ -22,6 +22,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 nav{
     width: 100%;
@@ -234,7 +235,7 @@ nav .button a:hover{
 }
 
 
-/* footer*/
+/************ footer *****************/
 
 footer{
     width: 100%;
@@ -744,25 +745,7 @@ margin-top: 20px;
 
     
 }
-/*****************************/
-
-:root{
-    --background:linear-gradient(to right,#0D022D,#034B3F);
-
-}
-
-/*Accueil*/
-
-header{
-    width: 100%;
-    height: auto;
-    background-image: url(image/imageAccuiel.jpg);
-    background-size: cover;
-}
-
-
-
-
+/***************chat**************/
 #chatdiv{
     display: grid;
     grid-template-columns: 30% 70%;
@@ -934,7 +917,7 @@ height: 500px;
 }
 
 
-/* section groupe */
+/*********** groupe ******************/
 .groupe-section {
     padding: 40px;
     padding-top: 100px;
@@ -1025,3 +1008,4 @@ height: 500px;
 .groupe-btnrejoindre:hover {
     background-color: #025a5a;
 }
+/****************/
